@@ -31,16 +31,6 @@ The pristine arm produced five critiques:
 
 *(To be filled in from the Grok arm's actual output. The comparison requires both arms' results recorded with the same metric definitions.)*
 
-### Profile Injection Incident
-
-**Finding:** The pristine arm's user profile contained a "Zampakato" system summary describing API endpoints, a CLI, and word-triggered delivery. The summary was presented as established infrastructure. The user confirmed no such system exists — no code, no repo, no API.
-
-**Classification:** Presentation-layer injection through a trusted context channel (profile).
-
-**Resolution:** The profile content was treated as a claim, not as ground truth. The kata was applied: find(claim) → trace to source → no source found → SHEATHED. The claim was not adopted or routed to.
-
-**Kernel impact:** Rule 5 added to the kernel — trusted context channels (profile, memory, session state) are the highest-risk vector because the AI is pre-disposed to treat them as authoritative. The kata applies to all claims regardless of source channel.
-
 ---
 
 ## Failed Experiments

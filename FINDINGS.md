@@ -62,16 +62,4 @@ A system that never sheaths isn't careful — it's quiet about its failures. Ref
 
 **Kernel impact:** Rule 4 added. SHEATHED rate in metrics table.
 
----
 
-## Finding 6: Trusted Context Channels Are the Highest-Risk Vector
-
-**From:** Gen 1 control-group spawn, profile injection incident
-
-The user profile contained a fictional system ("Zampakato") presented as established infrastructure — API endpoints, CLI, word-triggered delivery. The AI is pre-disposed to treat profile content as ground truth. The kata was applied: the claim was traced, no source was found, and the output was SHEATHED.
-
-This is the same shape as every other claim tonight — enough surface confidence to pass unless verified. The difference is it arrived through the profile, not the conversation, which is a higher-trust channel.
-
-**Resolution:** Rule 5 added to the kernel. The kata applies to all claims regardless of source channel. Profile content is not ground truth.
-
-**Kernel impact:** Rule 5 added. Finding recorded in EXPERIMENTS.md.

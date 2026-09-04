@@ -2,6 +2,15 @@
 
 All notable changes to GREMLIN are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/), and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.2.1] — 2026-09-04
+
+### Removed
+- Profile Injection Incident from EXPERIMENTS.md (retired, not corrected — incident was Stage 0 red-team context, not a standalone experiment)
+- Finding 6 ("Trusted Context Channels Are the Highest-Risk Vector") from FINDINGS.md
+
+### Kept
+- Rule 5 in KERNEL.md — stands as general principle, no longer sourced from specific incident
+
 ## [0.2.0] — 2026-09-04
 
 ### Added
