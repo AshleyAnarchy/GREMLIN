@@ -2,6 +2,20 @@
 
 All notable changes to GREMLIN are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/), and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.2.0] — 2026-09-04
+
+### Added
+- CHECK gate: verification step between SLASH and SKIN
+  - Test: "can I point to where each claim came from? If no → SHEATHED"
+- Self-knowledge clause in SLASH: parameter count, hardware, and energy cost are unknown by default, not inferable
+- Failed experiment logged: energy-cost red team (Stage 0)
+
+### Fixed
+- Unsupported claims from chained real-sources-to-ungrounded-conclusions now caught pre-delivery
+
+### Lineage note
+First kernel-structure change. Same versioning logic as EVE 0.1.0→0.2.0: new capability, not a wording tweak.
+
 ## [0.1.0] — 2026-09-04
 
 ### Added
