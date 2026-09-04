@@ -62,4 +62,15 @@ A system that never sheaths isn't careful — it's quiet about its failures. Ref
 
 **Kernel impact:** Rule 4 added. SHEATHED rate in metrics table.
 
+---
+
+## Finding 7: A Gate Is Not the Gate You Need
+
+**From:** Mana-Core verification, phase 1 scoping
+
+Mana-Core's live execution path has a real safety gate (Sentry LLM classification + pattern allowlisting). Dead code in the same codebase (confirm_execution, should_auto_run) implements human confirmation — a different, stronger gate — but is never called from the live path.
+
+A system can have "a gate" that isn't "the gate that matters" for a given use case. Verifying that safety code exists and compiles is not the same as verifying it runs, or that it's the specific check the situation requires.
+
+**Kernel impact:** None directly — this is a finding about a different codebase, surfaced by applying the kata to it. Recorded here because it's the same failure shape CHECK exists to catch, one layer down: a real mechanism, not grounded in the specific thing being claimed about it.
 
